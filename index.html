@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .floatLeft {
+            float: left;
+        }
+
+        .bgWhite {
+            background-color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* navigaton */
+        nav {
+            width: 100%;
+            z-index: 9999;
+        }
+
+        .logoText {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        nav ul li {
+            padding: 0px 25px;
+        }
+
+        .nav-link {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 180%;
+            color: black;
+        }
+
+        .headerBg {
+            padding: 20px;
+            background-color: #ECF3FF;
+        }
+
+        /* section Location */
+        .heading {
+            font-size: 72px;
+            font-weight: 600;
+            line-height: 128%;
+            letter-spacing: 0.01em;
+            color: black;
+        }
+
+        .heading2 {
+            font-size: 62px;
+            font-weight: 600;
+            line-height: 128%;
+            letter-spacing: 0.01em;
+            color: black;
+        }
+
+        .subHeading {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 150%;
+            color: #5D616F;
+            font-style: normal;
+            letter-spacing: 1px
+        }
+
+        .subHeading2 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 150%;
+            color: #5D616F;
+            font-style: normal;
+            letter-spacing: 1px;
+            padding: 80px 0px;
+        }
+
+        /* 2nd section */
+        .padding-40 {
+            padding: 100px 0px;
+        }
+
+        .headerImg {
+            width: 488px;
+            height: 662px;
+        }
+
+        .headerImg2 {
+            width: 488px;
+            height: 610px;
+        }
+
+        .btn1 {
+            background: #3E82FC;
+            border-radius: 40px;
+            border: none;
+            font-weight: 600;
+            color: white;
+            padding: 13px 37px;
+        }
+
+        .btn2 {
+            background: transparent;
+            border-radius: 40px;
+            border: 2px solid #3E82FC;
+            font-weight: 600;
+            color: #3E82FC;
+            padding: 10px 35px;
+        }
+
+        /* 3rd section */
+        .w-57 {
+            width: 60px;
+            padding-left: 10px;
+        }
+
+        .m-52 {
+            margin-top: 52px;
+        }
+
+        /* section Blogs */
+
+        .bgImg1 {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            backface-visibility: visible;
+        }
+
+        .counts {
+            position: absolute;
+            height: 92px;
+            margin-top: 50px;
+            color: #ECF3FF;
+            font-size: 115px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .spaceTopBottom {
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+
+        /* 5th section */
+        .trustSections {
+            padding: 80px 0px;
+        }
+
+        .trustSubheading {
+            font-size: 20px;
+            color: #3e82f6;
+            line-height: 26px;
+            font-weight: 500;
+            padding-bottom: 15px;
+        }
+
+        .trustHeading {
+            font-size: 30px;
+            color: #000;
+            line-height: 40px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+
+        .trustLogo {
+            width: 225px;
+            height: 28px;
+        }
+
+        .trustLogo2 {
+            width: 225px;
+            height: 50px;
+        }
+
+        .trustHeader {
+            margin-bottom: 60px;
+        }
+
+        /* 6th section (newsletter)*/
+        .newsletter {
+            padding: 50px 0px;
+            text-align: center;
+        }
+
+        .newsLetterSubHeding {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 12px;
+        }
+
+        input[type="text"] {
+            background: transparent;
+            color: #3e82f6;
+            border: 1px solid #3e82f6;
+            border-radius: 50px;
+            padding: 11px 80px 11px 35px;
+        }
+
+        .emailIcon {
+            margin-right: -37px;
+            color: #3E82FC;
+
+        }
+
+        input[type="text"]::placeholder {
+            text-align: right;
+            margin: 0px;
+            color: #3E82FC;
+        }
+
+        /* corosoul */
+
+        .qutationMark {
+            width: 80px;
+            margin-right: 40px;
+        }
+
+        .prevMark {
+            margin-left: -204px;
+        }
+
+
+        .testimonialP p {
+            font-size: 14px;
+            /* line-height: 12px; */
+            margin: 0px;
+            padding: 1px 0px;
+        }
+
+        .corosoul_imgAvator {
+            width: 104px;
+            height: 104px;
+        }
+
+        .carousel-item .card {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            backface-visibility: visible;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border: 0;
+            box-shadow: 2px 2px 2px 2px #ECF3FF;
+        }
+
+        /* footer */
+
+        .socialIcons i {
+            color: white;
+            background-color: #3e82f6;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+
+        footer {
+            margin: 30px 0px;
+        }
+
+        ul li {
+            list-style: none;
+            padding-bottom: 20px;
+        }
+
+        /* logos */
+        .triprajLogo {
+            display: flex;
+            justify-content: end;
+        }
+
+        .triprajLogo2 {
+            display: flex;
+            justify-content: start;
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
+        @media only screen and (max-width:768px) {
+            .btn1 {
+                margin: 10px 0px;
+            }
+
+            .heading {
+                font-size: 38px;
+                letter-spacing: 1.3px;
+            }
+
+            .heading2 {
+                font-size: 38px;
+                letter-spacing: 1.3px;
+            }
+
+            .padding-40 {
+                padding: 50px 0px;
+            }
+
+            .subHeading {
+                font-size: 18px;
+                letter-spacing: 0.8px;
+            }
+
+            .trustLogo {
+                margin: 20px;
+            }
+
+            .counts {
+                margin-top: -65px;
+                font-size: 90px;
+            }
+
+            .carousel-inner .carousel-item>div {
+                display: none;
+            }
+
+            .carousel-inner .carousel-item>div:first-child {
+                display: block;
+            }
+
+            /* logos */
+            .triprajLogo {
+                margin-top: 52px;
+                justify-content: center;
+            }
+
+            .triprajLogo2 {
+                justify-content: center;
+            }
+
+            .trustLogo2 {
+                margin-top: -16px;
+            }
+
+            .newsLetterSubHeding {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            .footerLogo {
+                text-align: center;
+            }
+
+            .newsletter {
+                text-align: center;
+                padding: 0px 0px;
+            }
+
+            .qutationMark {
+                width: 70px;
+                margin-right: 65px;
+            }
+
+            .tripLogo {
+                margin-top: -42px;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            input[type="text"] {
+                margin-bottom: 27px;
+            }
+        }
+
+        /* medium and up screens */
+        @media (min-width: 769px) and (max-width:1100px) {
+
+            .carousel-inner .carousel-item-end.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(25%);
+            }
+
+            .carousel-inner .carousel-item-start.active,
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-25%);
+            }
+
+            p {
+                display: inline;
+                line-height: 23px;
+            }
+
+            .qutationMark {
+                width: 46px;
+                margin-left: -40px;
+            }
+
+            .heading {
+                font-size: 48px;
+            }
+
+            .heading2 {
+                font-size: 48px;
+                letter-spacing: 1.3px;
+            }
+
+            .btn1 {
+                margin: 10px 0px;
+            }
+
+            .subHeading {
+                font-size: 20px;
+                display: inline;
+            }
+        }
+
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <article class="headerBg" aria-label="article">
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg">
+                <a href="#" class="navbar-brand">
+                    <div>
+                        <svg width="45" height="40" viewBox="0 0 45 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M39.9989 23.0417C35.425 20.8544 28.0659 19.4616 21.3711 19.4616C17.2685 19.4616 14.7481 12.402 14.0457 7.77739L16.6985 3.29787C17.2932 2.29356 18.1413 1.46104 19.1588 0.882643C20.1763 0.304244 21.328 0 22.5 0C23.672 0 24.8237 0.304244 25.8412 0.882643C26.8587 1.46104 27.7068 2.29356 28.3015 3.29787L39.9989 23.0417ZM43.7536 29.3782L44.0678 29.9049C44.6706 30.9221 44.9921 32.0797 44.9999 33.2603C45.0076 34.441 44.7014 35.6027 44.1121 36.6276C43.5228 37.6526 42.6715 38.5044 41.6445 39.0966C40.6175 39.6889 39.4513 40.0005 38.2641 40H6.7337C5.54669 40.0001 4.38074 39.6882 3.35403 39.0958C2.32732 38.5034 1.47634 37.6515 0.88735 36.6266C0.298355 35.6018 -0.00771997 34.4402 0.000147948 33.2598C0.00801586 32.0793 0.329547 30.9219 0.932152 29.9049L11.0697 12.7993C12.0056 18.9594 15.8815 23.9255 21.3711 23.9255C27.5362 23.9255 36.4305 25.1218 43.7536 29.3782Z"
+                                fill="#3E82FC" />
+                        </svg>
+                        <span class="logoText">HIGHKING</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li><a class="nav-link" href="#location">Location</a></li>
+                        <li><a class="nav-link" href="#blogs">Blogs</a></li>
+                        <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Section Location -->
+            <section id="location" aria-label="section">
+                <article class="row padding-40">
+                    <div class="col-md-6">
+                        <div class="">
+                            <h2 class="heading">Be prepared for</h2>
+                            <h2 class="d-sm-inline heading">the mountains</h2>
+                            <h2 class="heading"> and beyond</h2>
+
+                            <h5 class="subHeading">
+                                Are you looking for amazing hiking </h5>
+                            <h5 class="subHeading">travel? Dont't worry! We got it for you</h5>
+
+                            <div class="mt-5 row">
+                                <div class="col-md-12 mb-4">
+                                    <button class="btn1 me-4 ">Contact us</button>
+                                    <button class="btn2">Watch Video</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/header_img.png" alt="header_img" class="headerImg img-fluid">
+                        </div>
+                    </aside>
+                </article>
+            </section>
+
+            <!-- Section Cards-->
+            <div>
+                <article class="bgWhite p-5 shadow" aria-label="article">
+                    <div class="row">
+                        <div class="col-md-4  d-flex justify-content-center mt-3">
+                            <div class="card" style="width: 18rem; border: none;">
+                                <img class="card-img-top w-57 img-fluid" src="images/card1.png" alt="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bolder">Secret Locations</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                                        delectus aliquam quod.</p>
+                                    <a href="#" class="text-danger">
+                                        <span class="border-0 border-bottom border-1 border-danger">Read Mo</span>re</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-flex justify-content-center mt-3">
+                            <div class="card" style="width: 18rem; border: none;">
+                                <img class="card-img-top w-57 img-fluid" src="images/card2.png" alt="card2">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bolder">Safe Adventures</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                                        delectus aliquam quod.</p>
+                                    <a href="#" class="text-danger">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-flex justify-content-center mt-3">
+                            <div class="card" style="width: 18rem; border: none;">
+                                <img class="card-img-top w-57 img-fluid" src="images/card3.png" alt="card3">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bolder">Professionals Hikers</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                                        delectus aliquam quod.</p>
+                                    <a href="#" class="text-danger">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </article>
+
+        <section class="text-center" id="blogs">
+            <h3 class="subHeading2">Don't hesitate to contact us to get better Information<i class="text-danger">
+                    EXPLORE ALL TREKKING</i> </h3>
+        </section>
+
+        <!-- Section Blog -->
+        <section aria-label="section">
+            <article class="bgImg1" style="background-image: url(images/bg_img.png)" aria-label="article">
+                <article class="row" aria-label="article">
+                    <aside class="col-md-6 d-flex justify-content-center ">
+                        <div class="d-flex justify-content-start">
+                            <img src="images/adventure.png" alt="adventure" class="headerImg2 img-fluid">
+                        </div>
+                    </aside>
+
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="m-52">
+                            <h2 class="heading2">Safe, </h2>
+                            <h2 class="heading2">Addorable,and</h2>
+                            <h2 class="heading2">Trusted</h2>
+
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <h5 class="subHeading">
+                                        Volunteer trail stewardship</h5>
+                                    <h5 class="subHeading">projects in America's parks and </h5>
+                                    <h5 class="subHeading">forests designed specifically for </h5>
+                                    <h5 class="subHeading">college student groups and</h5>
+                                    <h5 class="subHeading">young professionals.</h5>
+
+                                </div>
+                                <div class="col-sm-2 d-flex justify-content-end">
+                                    <h2 class="counts">1</h2>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <button class="btn1 me-4">
+                                    Contact us
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+
+        <!-- Section Trusted Companies -->
+        <section aria-label="section">
+            <article class="trustSections">
+                <div class="text-center trustHeader">
+                    <h6 class="trustSubheading">Safe Journey</h6>
+                    <h4 class="trustHeading">Trusted by Big Companies</h4>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 d-flex justify-content-center" id="travelAdvisor">
+                        <img src="images/travelAdvisor.png" alt="travel Advisor" class="trustLogo img-fluid">
+                    </div>
+                    <div class="col-md-4 col-sm-12  d-flex justify-content-center" id="unitedTravel">
+                        <img src="images/unitedTravel.png" alt="united Travel" class="trustLogo img-fluid">
+                    </div>
+                    <div class="col-md-4 col-sm-12  d-flex justify-content-center" id="travelChannel">
+                        <img src="images/travelChannel.png" alt="travel Channel" class="trustLogo img-fluid">
+                    </div>
+                    <div class="col-md-5 col-sm-12 mt-5 triprajLogo" id="tripraj">
+                        <img src="images/tripraj.png" alt="tri praj" class="trustLogo2 tripLogo img-fluid">
+                    </div>
+                    <div class="d-none d-md-block col-md-1  d-flex justify-content-end">
+                    </div>
+                    <div class="col-md-6 col-sm-12 triprajLogo2 mt-5" id="bookingCom">
+                        <img src="images/bookingCom.png" alt="booking Com" class="trustLogo2 img-fluid">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Enjoy Life -->
+        <section aria-label="section">
+            <article class="bgImg1 my-5 py-4 img-fluid" style="background-image: url(images/bg_img.png)"
+                aria-label="article">
+                <article class="row">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="m-52">
+                            <h2 class="heading2">Enjoy Your Life </h2>
+                            <h2 class="heading2">With Us Now!</h2>
+
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h5 class="subHeading">
+                                        Volunteer trail stewardship</h5>
+                                    <h5 class="subHeading">projects in America's parks and </h5>
+                                    <h5 class="subHeading">forests designed specifically for </h5>
+                                    <h5 class="subHeading">college student groups and</h5>
+                                    <h5 class="subHeading">young professionals.</h5>
+
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-end">
+                                    <h2 class="counts">2</h2>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <button class="btn1 me-4">
+                                    Contact us
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="col-md-6 d-flex justify-content-center">
+                        <div class="d-flex justify-content-start">
+                            <img src="images/enjoyLife.png" alt="Enjoy" class="headerImg2 img-fluid">
+                        </div>
+                    </aside>
+                </article>
+            </article>
+        </section>
+
+        <!-- Section Enjoy Nature -->
+        <section class="spaceTopBottom" aria-label="section">
+            <article class="bgImg1 my-5 py-4 img-fluid" style="background-image: url(images/bg_img.png)"
+                aria-label="article">
+                <article class="row" aria-label="article">
+                    <aside class="col-md-6 d-flex justify-content-center ">
+                        <div class="d-flex justify-content-start">
+                            <img src="images/natureEnjoy.png" alt="Nature Enjoy" class="headerImg2 img-fluid">
+                        </div>
+                    </aside>
+
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="m-52">
+                            <h2 class="heading2">Let's Enjoy</h2>
+                            <h2 class="heading2">Nature With Us</h2>
+
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <h5 class="subHeading">
+                                        Volunteer trail stewardship</h5>
+                                    <h5 class="subHeading">projects in America's parks and </h5>
+                                    <h5 class="subHeading">forests designed specifically for </h5>
+                                    <h5 class="subHeading">college student groups and</h5>
+                                    <h5 class="subHeading">young professionals.</h5>
+
+                                </div>
+                                <div class="col-sm-2 d-flex justify-content-end">
+                                    <h2 class="counts">3</h2>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <button class="btn1 me-4">
+                                    Contact us
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+
+        <!-- Section Testinonials -->
+        <section id="testimonials" aria-label="section">
+            <article class="my-5">
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div class="text-center mb-3">
+                        <h6 class="trustSubheading p-0">Happy Hikers</h6>
+                        <h4 class="trustHeading">Clients Say About Us</h4>
+                    </div>
+                    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-4 col-sm-12 mx-2">
+                                    <div class="card" style="background-image:url(images/bg_img.png) ;">
+                                        <div class="py-5 px-2">
+                                            <div>
+                                                <div>
+                                                    <img src="images/quotationMark.png" alt="Quotation Mark"
+                                                        class="qutationMark">
+                                                    <img src="https://via.placeholder.com/500x400/00f?text=1"
+                                                        alt="avator" class="rounded-pill mb-3 corosoul_imgAvator">
+                                                </div>
+                                                <h5 class="card-title fw-bolder text-center">Omkar Gause</h5>
+                                                <p class="text-danger text-center">Happy Client</p>
+                                                <div class="text-center testimonialP">
+                                                    <p>“Everyone working in the office is very knowledgeable about all
+                                                    </p>
+                                                    <p> types of dental work and options for your individual needs.”</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-center text-warning my-1">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4 col-sm-12 mx-2">
+                                    <div class="card shadow-md" style="background-image:url(images/bg_img.png) ;">
+                                        <div class="py-5 px-2">
+                                            <div>
+                                                <div>
+                                                    <img src="images/quotationMark.png" alt="mark" class="qutationMark">
+                                                    <img src="https://via.placeholder.com/500x400/000?text=2"
+                                                        alt="avator" class="rounded-pill mb-3 corosoul_imgAvator">
+
+                                                </div>
+                                                <h5 class="card-title fw-bolder text-center">Abcdef Xyz</h5>
+                                                <p class="text-danger text-center">Happy Client</p>
+                                                <div class="text-center testimonialP">
+                                                    <p>“Everyone working in the office is very knowledgeable about all
+                                                    </p>
+                                                    <p> types of dental work and options for your individual needs.”</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-center text-warning my-1">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-img-overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4 col-sm-12 mx-2">
+                                    <div class="card shadow-md" style="background-image:url(images/bg_img.png) ;">
+                                        <div class="py-5 px-2">
+                                            <div>
+                                                <div>
+                                                    <img src="images/quotationMark.png" alt="mark" class="qutationMark">
+                                                    <img src="https://via.placeholder.com/500x400/f00?text=3"
+                                                        alt="avator" class="rounded-pill mb-3 corosoul_imgAvator">
+                                                </div>
+                                                <h5 class="card-title fw-bolder text-center">Safe Adventu</h5>
+                                                <p class="text-danger text-center">Happy Client</p>
+                                                <div class="text-center testimonialP">
+                                                    <p>“Everyone working in the office is very knowledgeable about all
+                                                    </p>
+                                                    <p> types of dental work and options for your individual needs.”</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-center text-warning my-1">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-img-overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4 col-sm-12 mx-2">
+                                    <div class="card shadow-md" style="background-image:url(images/bg_img.png) ;">
+                                        <div class="py-5 px-2">
+                                            <div>
+                                                <div>
+                                                    <img src="images/quotationMark.png" alt="mark" class="qutationMark">
+                                                    <img src="https://via.placeholder.com/500x400/0f0?text=4"
+                                                        alt="avator" class="rounded-pill mb-3 corosoul_imgAvator">
+
+                                                </div>
+                                                <h5 class="card-title fw-bolder text-center">Saf Adventures</h5>
+                                                <p class="text-danger text-center">Happy Client</p>
+                                                <div class="text-center testimonialP">
+                                                    <p>“Everyone working in the office is very knowledgeable about all
+                                                    </p>
+                                                    <p> types of dental work and options for your individual needs.”</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-center text-warning my-1">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4 col-sm-12 mx-2">
+                                    <div class="card shadow-md" style="background-image:url(images/bg_img.png) ;">
+                                        <div class="py-5 px-2">
+                                            <div>
+                                                <div>
+                                                    <img src="images/quotationMark.png" alt="mark" class="qutationMark">
+                                                    <img src="https://via.placeholder.com/500x400/00f?text=5"
+                                                        alt="avator" class="rounded-pill mb-3 corosoul_imgAvator">
+                                                </div>
+                                                <h5 class="card-title fw-bolder text-center">Safe Adventures</h5>
+                                                <p class="text-danger text-center">Happy Client</p>
+                                                <div class="text-center testimonialP">
+                                                    <p>“Everyone working in the office is very knowledgeable about all
+                                                    </p>
+                                                    <p> types of dental work and options for your individual needs.”</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-center text-warning my-1">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4 col-sm-12 mx-2">
+                                    <div class="card shadow-md" style="background-image:url(images/bg_img.png) ;">
+                                        <div class="py-5 px-2">
+                                            <div>
+                                                <div>
+                                                    <img src="images/quotationMark.png" alt="mark" class="qutationMark">
+                                                    <img src="https://via.placeholder.com/500x400/000?text=6"
+                                                        alt="avator" class="rounded-pill mb-3 corosoul_imgAvator">
+                                                </div>
+                                                <h5 class="card-title fw-bolder text-center">Safe Adventures</h5>
+                                                <p class="text-danger text-center">Happy Client</p>
+                                                <div class="text-center testimonialP">
+                                                    <p>“Everyone working in the office is very knowledgeable about all
+                                                    </p>
+                                                    <p> types of dental work and options for your individual needs.”</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-center text-warning my-1">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon text-dark h2 fw-bolder me-5" aria-hidden="true"><i
+                                    class="bi bi-caret-left-fill"></i></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon text-dark h2 fw-bolder ms-5" aria-hidden="true"><i
+                                    class="bi bi-caret-right-fill"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Subscribe Newsletter-->
+        <section id="contact" aria-label="section">
+            <article class="headerBg" aria-label="article">
+                <section aria-label="section">
+                    <article class="newsletter">
+                        <h4 class="trustHeading">Subscribe to Our Newsletter</h4>
+                        <h4 class="trustHeading">For Weekly Article Update</h4>
+
+                        <div class=" mt-4">
+                            <p class="mb-2 newsLetterSubHeding">We have hiking-related blog so we can share our thought
+                                and rutinity
+                            <p class="newsLetterSubHeding">in our blog that updated weekly. We will not spam you, we
+                                promise.</p>
+                        </div>
+                        <div class="my-5">
+                            <i class="bi bi-envelope emailIcon"></i>
+                            <input type="text" id="emailID" placeholder="Enter Your Email Address">
+                            <a href="mailto:webkrida@gmail.com" class="btn1 ms-3">
+                                Subscribe
+                            </a>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Section Footer -->
+                <footer>
+                    <article aria-label="article">
+                        <div class="row">
+                            <div class="col-md-6 footerLogo">
+                                <div class="mb-4">
+                                    <svg width="45" height="40" viewBox="0 0 45 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M39.9989 23.0417C35.425 20.8544 28.0659 19.4616 21.3711 19.4616C17.2685 19.4616 14.7481 12.402 14.0457 7.77739L16.6985 3.29787C17.2932 2.29356 18.1413 1.46104 19.1588 0.882643C20.1763 0.304244 21.328 0 22.5 0C23.672 0 24.8237 0.304244 25.8412 0.882643C26.8587 1.46104 27.7068 2.29356 28.3015 3.29787L39.9989 23.0417ZM43.7536 29.3782L44.0678 29.9049C44.6706 30.9221 44.9921 32.0797 44.9999 33.2603C45.0076 34.441 44.7014 35.6027 44.1121 36.6276C43.5228 37.6526 42.6715 38.5044 41.6445 39.0966C40.6175 39.6889 39.4513 40.0005 38.2641 40H6.7337C5.54669 40.0001 4.38074 39.6882 3.35403 39.0958C2.32732 38.5034 1.47634 37.6515 0.88735 36.6266C0.298355 35.6018 -0.00771997 34.4402 0.000147948 33.2598C0.00801586 32.0793 0.329547 30.9219 0.932152 29.9049L11.0697 12.7993C12.0056 18.9594 15.8815 23.9255 21.3711 23.9255C27.5362 23.9255 36.4305 25.1218 43.7536 29.3782Z"
+                                            fill="#3E82FC" />
+                                    </svg>
+                                    <span class="logoText">HIGHKING</span>
+                                </div>
+                                <div class="newsLetterSubHeding mt-2 mb-4">
+                                    <p>We envision a world where </p>
+                                    <p>everyone feels welcome in the </p>
+                                    <p>American hiking community.</p>
+                                </div>
+                                <div class="">
+                                    <div class="row socialIcons">
+                                        <div class="col-sm-4 w-100 mb-4" style="display: inline;">
+                                            <i class="bi bi-facebook me-3"></i>
+                                            <i class="bi bi-twitter me-3"></i>
+                                            <i class="bi bi-instagram me-3"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <ul>
+                                    <li class="text-dark fw-bolder h5">Location</li>
+                                    <li>America</li>
+                                    <li>Asia</li>
+                                    <li>Europe</li>
+                                    <li>Africa</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <ul>
+                                    <li class="text-dark fw-bolder h5">Contact</li>
+                                    <li>About Me</li>
+                                    <li>Teams</li>
+                                    <li>Profile</li>
+                                    <li>FAQ</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2">
+                                <ul>
+                                    <li class="text-dark fw-bolder h5">Legals</li>
+                                    <li>Privacy</li>
+                                    <li>Desclaimer</li>
+                                    <li>Terms</li>
+                                    <li>Company</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </footer>
+            </article>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script>
+        /*
+            Below code written to display 3 itmes at a time in carousel.
+            If we comment below code, system will display single item.
+        */
+        onload = function () {
+            let items = document.querySelectorAll('.carousel .carousel-item')
+
+            items.forEach((el) => {
+                const minPerSlide = 3
+                let next = el.nextElementSibling
+                for (var i = 1; i < minPerSlide; i++) {
+                    if (!next) {
+                        next = items[0]
+                    }
+                    let cloneChild = next.cloneNode(true)
+                    el.appendChild(cloneChild.children[0])
+                    next = next.nextElementSibling
+                }
+            });
+        }        
+    </script>
+</body>
+
+</html>
